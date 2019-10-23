@@ -3,18 +3,18 @@
 //make sure the pyramid has spaces on both left and right hand side
 
 function pyramid(n) {
-    const midpoint = math.floor((2 * n - 1) /2); 
+    const midpoint = Math.floor((2 * n - 1) /2); 
 
      for(let row=0;row<n;row++) {
          let level = '';
 
-         for(let colum=0;colum<2*n-1;colum++) {
-             if(midpoint - row <=colum && midpoint + row >=colum) {
+         for(let column=0;column<2*n-1;column++) {
+             if(midpoint - row <=column && midpoint + row >=column) {
                  level +='#';
              }else{
                  level += ' '
              }
          } 
-         console.log(level)
+         console.log(level);
      }
-}
+} 
